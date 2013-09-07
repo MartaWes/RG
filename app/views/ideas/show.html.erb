@@ -11,6 +11,16 @@
    <%= @idea.created_at %>
 </p>
 
+<h3>Comments</h3>
+<% @idea.comments.each do |comment| %>
+  <div>
+    <strong><%= comment.user_name %></strong>
+    <br />
+    <p><%= comment.body %></p>
+  </div>
+<% end %>
+<%= render 'comments/form' %>
+
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
 <%= link_to 'Destroy', @idea, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', ideas_path %>
