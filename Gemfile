@@ -7,6 +7,9 @@ gem 'rails', '4.0.0.rc2'
 gem 'sqlite3'
 gem 'carrierwave'
 gem 'mini_magick', '3.5.0'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails',
+                              :branch => '3.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc2'
